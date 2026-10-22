@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Alsu Bulatova - Frontend Engineer</title>
+<style>
+@page {size:A4; margin:12mm;}
+* {box-sizing:border-box; margin:0; padding:0;}
+body {font-family:Georgia,"Times New Roman",serif; font-size:10pt; line-height:1.25; color:#111; max-width:186mm; margin:0 auto;}
+header {text-align:center; margin-bottom:6pt;}
+h1 {font-size:19pt; font-weight:700; letter-spacing:.5px;}
+.subtitle {font-size:10.5pt; margin-top:2pt;}
+.contact {font-size:9pt; margin-top:3pt; color:#222;}
+a {color:#111; text-decoration:none;}
+p {text-align:justify;} header p {text-align:center;}
+h2 {font-size:9.5pt; text-transform:uppercase; letter-spacing:1px; border-bottom:.8pt solid #111; margin:5.5pt 0 2pt; padding-bottom:1pt; break-after:avoid;}
+.row {display:flex; justify-content:space-between; align-items:baseline; margin-top:6pt; break-after:avoid;}
+.org {font-weight:700; font-size:10.5pt;}
+.role {font-style:italic; font-size:9.5pt;}
+.dates {font-size:9.5pt; white-space:nowrap;}
+.note {font-size:9.5pt; font-style:italic; color:#333; margin:1pt 0; text-align:left;}
+.context {font-style:italic; margin:2pt 0; break-after:avoid;}
+ul {list-style:none; margin:1.5pt 0 0; padding-left:10pt;}
+li {text-indent:-10pt; margin-bottom:4pt; text-align:justify; break-inside:avoid;}
+.previous-experience {break-before:page;}
+.previous-experience h2 {margin-top:0;}
+.project-description {margin-top:3pt;}
+</style></head><body>
+<header>
+<h1>Alsu Bulatova</h1>
+<p class="subtitle">Frontend Engineer: Angular, TypeScript, React</p>
+<p class="contact"><a href="mailto:bulatovaalsu22@gmail.com">bulatovaalsu22@gmail.com</a><br>
+<a href="https://github.com/foxontheerun">github.com/foxontheerun</a></p>
+</header>
+<h2>Summary</h2>
+<p>Frontend engineer with four years of commercial experience, primarily in <b>Angular, TypeScript and RxJS</b>. I develop large existing applications, working with modular architecture, lazy loading, state management, design systems and change detection optimization. Recently migrated an application from Angular 18 to 22. I independently turn requirements into technical solutions, including API integration, tests and backend changes. English: B2.</p>
+
+<h2>Experience</h2>
+<div class="row"><span class="org">Liga Digital Economy, <span class="role">Frontend Engineer</span></span><span class="dates">Dec 2025 - Present</span></div>
+<p class="context"><b>Main project: enterprise AI platform</b>; Angular 18-22, TypeScript, RxJS, NGXS, HTML/SCSS, REST API, OpenAPI, WebSocket, Python/FastAPI, Vitest, Playwright, Karma/Jasmine, GitLab CI/CD, Docker</p>
+<p class="note">Document search, AI chat, presentation and image generation, and visual agent configuration. The document-search chat serves 1,000+ enterprise users.</p>
+<ul>
+<li>- <b>Migrated Angular 18 to 22 and upgraded to TypeScript 6</b>, resolving library incompatibilities and moving to standalone components with application- and route-level providers. Preserved authentication, lazy loading and user state restoration.</li>
+<li>- Developed the <b>design system and shared UI components</b>: semantic colors, light and dark themes, inputs and styling controls. Standardized complex editors and implemented contextual onboarding.</li>
+<li>- Built a <b>visual presentation editor</b> combining direct manipulation and AI commands. Managed document state and selection through NGXS, with undo and restoration of manual edits after reload.</li>
+<li>- Implemented a <b>WebSocket editing protocol</b> with structured operations, acknowledgements and optimistic updates with rollback. Added server-side version checks and atomic operation batches, protecting newer edits from an earlier operation's rollback.</li>
+<li>- Improved <b>authentication and guest access</b>: automatic token renewal, session expiry, sign-in recovery and guest session isolation. Built the UI for role-based tool permissions.</li>
+<li>- Built <b>knowledge-base, index and document management</b> interfaces integrated with backend APIs. Set up typed client generation from OpenAPI and added server endpoints for inspecting document fragments.</li>
+<li>- Optimized chat image loading with <b>IntersectionObserver</b> and language loading in highlight.js. Prevented stale asynchronous responses from replacing the currently selected document.</li>
+<li>- Migrated tests from <b>Karma/Jasmine to Vitest</b>, retaining existing coverage and asynchronous scenarios. Migration validation covered <b>551 unit tests and 230 browser scenarios</b>, including authentication, editor gestures and error recovery.</li>
+</ul>
+<p class="context"><b>Previous project: corporate travel platform</b>; TypeScript, FastAPI</p>
+<p class="note">Flight, rail and hotel search and booking, fare and seat selection, and business-trip approvals.</p>
+<ul>
+<li>- Owned frontend architecture and developed <b>search and booking flows</b>, including filtering, fare and seat selection, and protection against stale search results. Led a Feature-Sliced Design migration without pausing feature work.</li>
+<li>- Extended <b>backend approval workflows</b> with atomic status transitions, bulk approvals with delegation, and cancellation rules protecting paid bookings. Addressed concurrent actions; critical flows were covered by Jest and Playwright.</li>
+</ul>
+<section class="previous-experience">
+<h2>Experience - continued</h2>
+<div class="row"><span class="org">Gazprombank ETP, <span class="role">Frontend Engineer</span></span><span class="dates">Apr 2024 - Dec 2025</span></div>
+<p class="note">Cloud MDM platform for centralized product data, reference data and classifiers: large tables, validation, approval workflows and permissions. Angular, TypeScript, NGXS, RxJS, NG-Zorro, SignalR.</p>
+<ul>
+<li>- Refactored a monolithic module with complex state and validation into a <b>lazy-loaded architecture</b>, reducing initial load time by <b>32%</b>.</li>
+<li>- Migrated critical screens to <b>Angular Signals</b> and targeted reactive updates, improving rendering performance on large data tables by <b>15-20%</b>.</li>
+<li>- Developed <b>role-based approval workflows</b> using NGXS state and RxJS data streams. Implemented real-time notifications through SignalR.</li>
+<li>- Introduced reusable UI patterns and a standard for component data attributes, reducing QA automation rework by <b>60%</b>.</li>
+<li>- Set up reproducible <b>Docker environments</b>, reducing environment setup blockers by <b>90%</b>. Mentored a backend engineer transitioning to Angular, reviewed code and participated in planning.</li>
+</ul>
+<div class="row"><span class="org">Avtomatika-Service (Gazprom Neft), <span class="role">Junior Frontend Engineer</span></span><span class="dates">Oct 2022 - Apr 2024</span></div>
+<p class="note">Web applications for industrial process monitoring: equipment metrics, interactive installation diagrams and site configuration. Angular, TypeScript, RxJS, Apache ECharts, AntV X6.</p>
+<ul>
+<li>- Built a <b>shared admin console for three applications</b> and contributed to the Module Federation rollout. Migrated disparate UI libraries to the PrizmUI design system.</li>
+<li>- Developed <b>equipment monitoring dashboards and charts</b> with Apache ECharts, and visual schematic editors with custom nodes in AntV X6.</li>
+<li>- Redesigned configuration workflows so analysts could handle part of the setup, reducing new site onboarding time by <b>40%</b>.</li>
+<li>- Introduced <b>MSW API mocking</b> and Cypress component and E2E tests. Supported the React team with critical fixes, features and pre-release code reviews.</li>
+<li>- Started an internal <b>frontend community</b> for knowledge sharing and consistent coding standards across teams. Created Figma prototypes to discuss and agree on interface solutions.</li>
+</ul>
+<h2>Skills and engineering practices</h2>
+<p><b>Angular:</b> Angular 18-22, TypeScript, RxJS, NGXS, Signals, standalone components, OnPush, change detection, lazy loading, modular architecture, Module Federation.</p>
+<p><b>UI and APIs:</b> HTML, CSS/SCSS, JavaScript, design systems, NG-Zorro, PrizmUI, REST APIs, OpenAPI, WebSocket. Also React, GraphQL, Python/FastAPI and SQL.</p>
+<p><b>Quality and delivery:</b> Vitest, Jest, Playwright, Cypress, MSW, Karma/Jasmine, code review, Git. Configured GitLab CI/CD and wrote Dockerfiles and service deployment configuration.</p>
+<p><b>AI-assisted development:</b> use Claude Code with explicit task scope, constraints and validation plans; review generated code and tests.</p>
+<h2>Personal project</h2>
+<p class="context"><b><a href="https://github.com/foxontheerun/Koi-board">Koi - collaborative whiteboard</a></b>; React, TypeScript, Canvas, Go, GraphQL</p>
+<p class="project-description">Built a custom rendering engine and multi-client synchronization with temporary object locks. Tested with Vitest and Playwright, including a two-client collaboration scenario.</p>
+<h2>Independent LLM research</h2>
+<p>I study <b>mechanistic interpretability</b> in Qwen models and agent behavior control through <a href="https://github.com/foxontheerun/Inhibition_Mask">Inhibition Mask</a>. This helps me understand model limitations in everyday development: what to delegate to a coding agent, where my oversight is needed and which failures to anticipate.</p>
+<h2>Education and languages</h2>
+<p>Gubkin Russian State University of Oil and Gas, BSc in Applied Mathematics, 2018-2022<br>Russian: native. English: B2.</p>
+</section>
+</body></html>
